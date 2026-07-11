@@ -14,6 +14,13 @@ class singlyLinkedList:
             while curr.next is not None:
                 curr=curr.next
             curr.next=newNode
+    def middleElement(self):
+        slow=self.head
+        fast=self.head
+        while fast is not None and fast.next is not None:
+            slow=slow.next
+            fast=fast.next.next
+        print(slow.val)
     def printList(self):
         temp=self.head
         while temp:
@@ -27,3 +34,4 @@ sll.append(30)
 sll.append(40)
 sll.append(50)
 sll.printList()
+sll.middleElement()
