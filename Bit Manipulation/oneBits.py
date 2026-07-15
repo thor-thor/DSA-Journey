@@ -4,4 +4,4 @@ def hammingWeight(n):
         n&=(n-1)
         count+=1
     return count
-print(hammingWeight(6))
+print(hammingWeight(3))
