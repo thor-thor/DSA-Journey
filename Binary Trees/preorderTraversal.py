@@ -17,4 +17,10 @@ hot.right=coffe
 cold.left=cola
 cold.right=sprite
 
-print(hot.left.val)
+def preorderTraversal(node):
+    if not node:
+        return 
+    print(node.val)
+    preorderTraversal(node.left)
+    preorderTraversal(node.right)
+print(preorderTraversal(drinks))
