@@ -1,0 +1,20 @@
+class Node:
+    def __init__(self,val):
+        self.val=val
+        self.left=None
+        self.right=None
+drinks=Node('drinks')
+hot=Node('hot')
+cold=Node('cold')
+tea=Node('tea')
+coffe=Node('coffe')
+cola=Node('cola')
+sprite=Node('sprite')
+drinks.left=hot
+drinks.right=coffe
+hot.left=tea
+hot.right=coffe
+cold.left=cola
+cold.right=coffe
+
+print(hot.left.val)
