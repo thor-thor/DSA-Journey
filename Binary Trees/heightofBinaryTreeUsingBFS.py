@@ -18,7 +18,7 @@ hot.right=coffe
 cold.left=cola
 cold.right=sprite
 def heightNode(node):
-    result=[]
+    
     queue=deque([])
     height=0
     queue.append(node)
