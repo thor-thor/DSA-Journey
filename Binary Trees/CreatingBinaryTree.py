@@ -16,5 +16,3 @@ hot.left=tea
 hot.right=coffe
 cold.left=cola
 cold.right=sprite
-
-print(hot.left.val)
