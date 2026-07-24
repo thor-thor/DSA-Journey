@@ -19,7 +19,7 @@ cold.left=cola
 cold.right=sprite
 class Solution:
     def completeBT(self,node):
-        if not node:
+        if node is None:
             return True
         queue=deque([node])
         isFound=False
